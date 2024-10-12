@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random Pokémon Card</title>
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+<body>
+  <h1>Random Pokémon Card</h1>
+  <div class="card">
+    <img src="<%= pokemonCardImage %>" alt="<%= pokemonName %> Card" class="pokemon-image">
+  </div>
+  <div>
+    <button id="btnRefresh" class="button">Generate</button>
+  </div>
+</body>
+<script>
+  const refreshBtn = document.getElementById("btnRefresh");
+
+  function handleClick() {
+      // This will reload the page when the button is clicked
+      window.location.reload();
+  }
+
+  refreshBtn.addEventListener("click", handleClick);
+</script>
+</html>
